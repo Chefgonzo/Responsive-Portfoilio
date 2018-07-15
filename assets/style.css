@@ -27,11 +27,6 @@ body {
     margin: 0 auto -105px;
   }
   
-  footer,
-  .push {
-    height: 105px;
-  }
-  
   /* end sticky footer styling */
   
   /* start hover styling */
@@ -132,10 +127,6 @@ body {
     color: #999;
     text-decoration: none;
     border-left: 1px solid #efefef;
-  }
-  
-  nav a:first-child {
-    border-left: 0 none;
   }
   
   /* footer */
@@ -281,3 +272,81 @@ body {
     margin-right: 25px;
   }
     
+
+/*Media Queries*/
+
+@media screen and (max-width: 980px) {
+    .container {
+        width: 80%;
+    }
+
+    .sidebar {
+        width: 80%;
+        float: left;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        box-sizing: content-box;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .sidebar {
+        float: left;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    * {
+        box-sizing: content-box
+    }
+
+    .wrapper {
+        margin: auto;
+    }
+
+    .container {
+        margin: auto;
+        width: 100%;
+
+    }
+
+    #main-container {
+        padding: 10px;
+    }
+
+    .main-section {
+        padding: 20px;
+        width: 100%;
+        margin: 0;
+
+    }
+
+    #masthead {
+        position: static;
+        
+    }    
+
+    #logo {
+        width: 100%;
+    }
+
+    nav {
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+
+    }
+
+    nav a {
+        margin: auto;
+        padding: 10px;
+    }
+}
