@@ -289,16 +289,28 @@ body {
 
 @media screen and (max-width: 768px) {
     * {
-        box-sizing: content-box;
+      box-sizing: content-box;
+    }
+
+    #masthead {
+      margin: auto;
     }
 
     .container {
         width: 100%;
+        padding: auto;
+    }
+
+    .main-section {
+      float: none;
+      margin: auto;
     }
 
     .sidebar {
-        float: left;
+      float: none;
+      margin: auto;
     }
+    
 
 }
 
@@ -307,46 +319,29 @@ body {
         box-sizing: content-box
     }
 
-    .wrapper {
-        margin: auto;
-    }
-
     .container {
-        margin: auto;
         width: 100%;
-
-    }
-
-    #main-container {
-        padding: 10px;
+        padding: auto;
+        max-width: 640px;
     }
 
     .main-section {
-        padding: 20px;
+        float: none;
+        margin: auto;
         width: 100%;
-        margin: 0;
-
     }
 
     #masthead {
         position: static;
-        
     }    
 
     #logo {
         width: 100%;
     }
 
-    nav {
-        float: left;
-        width: 100%;
-        text-align: center;
-        margin: auto;
-
-    }
-
     nav a {
-        margin: auto;
-        padding: 10px;
+      margin: auto;
     }
+
+    
 }
